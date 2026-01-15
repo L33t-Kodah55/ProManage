@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tâches - Gestion de Projet</title>
+    <link rel="stylesheet" href="../CSS/PageTachesWeb.css">
+</head>
+<body>
+    <div class="content">
+        <div class="top-bar">
+            <div class="icon profile-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Icon" id="profile-icon">
+                <div id="profile-dropdown" class="dropdown-menu">
+                    <a href="../HTML/PageProfilAdminWeb.html" id="profile-link">Profil</a>
+                    <a href="../HTML/connexionPage.html" id="logout-link">Déconnexion</a>
+                </div>
+            </div>
+        </div>
+        <div class="content-complet">
+            <div class="main-content">
+                <img id="promanage-logo" src="../images/Fulllogo.png" alt="ProManage Logo" class="logo-image">
+                <h1 id="project-name">Tâches du Projet</h1>
+                <button id="create-tache-btn" class="button">Créer tâche</button>
+                <div class="card-container" id="task-card-container">
+                  
+                    <!-- Les tâches seront ajoutées ici par JavaScript -->
+                </div>
+                <button id="back-button" class="button">Retour</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de confirmation -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Êtes-vous sûr de vouloir supprimer cette tâche ?</p>
+            <button id="confirm-delete-btn" class="delete-btn">Supprimer</button>
+            <button id="cancel-delete-btn" class="button">Annuler</button>
+        </div>
+    </div>
+
+    <script src="../JS/PageTachesWeb.js"></script>
+</body>
+</html>

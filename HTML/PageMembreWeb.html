@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membres - Gestion de Projet</title>
+    <link rel="stylesheet" href="../CSS/PageMembreWeb.css">
+</head>
+<body>
+    <div class="content">
+        <div class="top-bar">
+            <div class="icon profile-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Icon" id="profile-icon">
+                <div id="profile-dropdown" class="dropdown-menu">
+                    <a href="../HTML/PageProfilAdminWeb.html" id="profile-link">Profil</a>
+                    <a href="../HTML/connexionPage.html" id="logout-link">Déconnexion</a>
+                </div>
+            </div>
+        </div>
+        <div class="content-complet">
+            <div class="main-content">
+                <img id="promanage-logo" src="../images/Fulllogo.png" alt="ProManage Logo" class="logo-image">
+                <h1 id="project-name">Membres du Projet</h1>
+                <button id="add-member-btn" class="button">Ajouter Membre</button>
+                <div class="members-list" id="members-list">
+                    <!-- Members will be dynamically loaded here -->
+                </div>
+                <button id="back-button" class="button">Retour</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/PageMembreWeb.js"></script>
+</body>
+</html>

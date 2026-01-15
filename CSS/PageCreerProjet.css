@@ -1,0 +1,77 @@
+.body-formulaire {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('https://img.freepik.com/photos-premium/fond-affaires-abstrait-lignes-bleues_476363-6173.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-formulaire {
+    max-width: 500px;
+    min-width: 500px;
+    background: lightblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.formulaire-titre {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-groupe {
+    margin-bottom: 35px;
+}
+
+.label-formulaire {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-formulaire {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.boutton-container-formulaire {
+    text-align: center;
+}
+
+.boutton-formulaire {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, width 0.4s ease, border-radius 0.9s;
+    width: 120px;
+}
+
+.renitialiser, .envoyer {
+    background-color: #28a745;
+}
+
+.renitialiser:hover, .envoyer:hover {
+    width: 160px;
+    border-radius: 20px;
+}
+
+.retour {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+}
+
+.retour:hover {
+    width: 160px;
+    border-radius: 20px;
+}

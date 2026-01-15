@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapports du Projet</title>
+    <link rel="stylesheet" href="../CSS/PageRapportsWeb.css">
+</head>
+<body>
+    <div class="content">
+        <div class="top-bar">
+            <div class="icon profile-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Icon" id="profile-icon">
+                <div id="profile-dropdown" class="dropdown-menu">
+                    <a href="../HTML/PageProfilAdminWeb.html" id="profile-link">Profil</a>
+                    <a href="../HTML/connexionPage.html" id="logout-link">Déconnexion</a>
+                </div>
+            </div>
+        </div>
+        <div class="content-complet">
+            <div id="welcome-message" class="welcome-message">
+                <h1>Rapports du Projet</h1>
+                <p>Voici les rapports du projet sélectionné.</p>
+            </div>
+            <div class="main-content" style="display: none;">
+                <h1 id="report-title"></h1>
+                <img id="promanage-logo" src="../images/Fulllogo.png" alt="ProManage Logo" class="logo-image">
+                <div id="report-list" class="card-container">
+                    <!-- Les rapports seront ajoutés ici par JavaScript -->
+                </div>
+                <button id="back-button" class="button">Retour</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/PageRapportsWeb.js"></script>
+</body>
+</html>

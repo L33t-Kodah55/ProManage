@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/vecteezy_blue-abstract-background-modern-design_.jpg');
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.login-container {
+    background: rgba(218, 241, 251, 0.8); /* 0.8 correspond à l'opacité, tu peux ajuster ce chiffre entre 0 (totalement transparent) et 1 (totalement opaque) */
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(4px);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(148, 140, 163, 0.5);
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    border: 2px solid rgba(179, 184, 159, 0.55);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Style form group elements */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Style the labels */
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #131414;
+}
+
+/* Style the input fields */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #A3B7C4;
+    box-shadow: 0 0 2px #e6ddc7;
+    border-radius: 8px;
+    background-color: #f9fefa;
+    color: #333;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #950048;
+    box-shadow: 0 0 5px rgba(149, 0, 72, 0.5);
+    outline: none;
+}
+
+#loginForm {
+    padding: 20px 0 0;
+}
+
+/* Container for the button and forgot password link */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style the submit button */
+button {
+    padding: 10px 20px;
+    background-color: #950048;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #892f41;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Style the forgot password link */
+.forgot-password {
+    color: #3a80a5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    color: #2c5981;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#requis {
+    color: red;
+}
+
+
+.logo-image {
+    max-width: 330px; /* Augmenter la taille du logo */
+    height: auto;
+}

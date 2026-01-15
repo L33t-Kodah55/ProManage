@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/connexionPage.css">
+</head>
+<body>
+    <canvas class="background"></canvas>
+    <div class="login-container">
+        <img id="promanage-logo" src="../images/Fulllogo.png" alt="ProManage Logo" class="logo-image">
+        <h2>Connexion</h2>
+        <form id="loginForm" action="PageAccueilWeb.html" method="POST">
+            <div class="form-group">
+                <label for="username">Nom d'utilisateur <span id="requis">*</span></label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe <span id="requis">*</span></label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-actions">
+                <a href="../HTML/mdpOubliePage.html" class="forgot-password">Mot de passe oublié ?</a>
+                <button type="submit">Connexion</button>
+            </div>
+        </form>
+    </div>
+    <script src="../JS/connexionPage.js"></script>
+</body>
+</html>

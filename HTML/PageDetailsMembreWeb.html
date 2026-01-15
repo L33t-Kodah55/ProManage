@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Membre</title>
+    <link rel="stylesheet" href="../CSS/PageDetailsMembreWeb.css">
+</head>
+<body class="background-page padding-page">
+    <div class="top-bar">
+        <div class="icon profile-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Icon" id="profile-icon">
+            <div id="profile-dropdown" class="dropdown-menu">
+                <a href="../HTML/PageProfilAdminWeb.html" id="profile-link">Profil</a>
+                <a href="../HTML/connexionPage.html" id="logout-link">Déconnexion</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <img id="promanage-logo" src="../images/Fulllogo.png" alt="ProManage Logo" class="logo-image">
+        
+        <!-- Icon Section -->
+        <div class="icon-section">
+            <img id="member-icon" src="path_to_member_icon.jpg" alt="icone" class="member-icon">
+        </div>
+
+        <!-- Personal Information and Performance Section Container -->
+        <div class="info-container">
+            <!-- Personal Information Section -->
+            <div class="personal-info">
+                <p><strong>Nom:</strong> <span id="member-nom">Nom du membre</span></p>
+                <p><strong>Prenom:</strong> <span id="member-prenom">Prénom du membre</span></p>
+                <p><strong>Courriel:</strong> <span id="member-courriel">email@example.com</span></p>
+            </div>
+
+            <!-- Performance Section -->
+            <div class="performance-info">
+                <p class="performance-title"><strong>Avancement</strong></p>
+                <div class="progress-bar-bg">
+                    <div id="performance-bar" class="progress-bar" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tasks Table -->
+        <div class="tasks-info">
+            <table class="tasks-table">
+                <thead>
+                    <tr>
+                        <th class="table-header">TACHES</th>
+                        <th class="table-header">PROJET</th>
+                        <th class="table-header">ÉCHÉANCE</th>
+                        <th class="table-header">STATUT</th>
+                    </tr>
+                </thead>
+                <tbody id="tasks-table">
+                    <tr>
+                        <td class="table-cell">Tache 1</td>
+                        <td class="table-cell">Projet 1</td>
+                        <td class="table-cell">##/##/####</td>
+                        <td class="table-cell">En cours/non commencé</td>
+                    </tr>
+                    <!-- Additional rows can be added here -->
+                </tbody>
+            </table>
+        </div>
+        <button id="back-button" class="back-button">Retour</button>
+    </div>
+
+    <script src="../JS/PageDetailsMembreWeb.js"></script>
+</body>
+</html>

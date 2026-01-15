@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Création de Membre</title>
+    <link rel="stylesheet" href="../CSS/FormCreerMembre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <canvas class="background"></canvas>
+    <div id="contenant">
+        <div id="blurOverlay" class="blur-overlay"></div>
+        <div id="conteneur" class="container">
+            <img id="promanage-logo" src="../images/Fulllogo.png" alt="ProManage Logo" class="logo-image">
+            <h2>Création de membre d'équipe</h2>
+            <form id="formCreerMembre">
+                <div class="form-group">
+                    <label for="nom">Nom <span id="requis">*</span></label>
+                    <span class="error-message" id="nomError"><i class="fas fa-exclamation-circle"></i> </span>
+                    <input type="text" id="nom" name="nom">
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom <span id="requis">*</span></label>
+                    <span class="error-message" id="prenomError"><i class="fas fa-exclamation-circle"></i> </span>
+                    <input type="text" id="prenom" name="prenom">
+                </div>
+                <div class="form-group">
+                    <label for="projectID">ID de projet <span id="requis">*</span></label>
+                    <span class="error-message" id="projectIDError"><i class="fas fa-exclamation-circle"></i> </span>
+                    <input type="text" id="projectID" name="projectID">
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse courriel <span id="requis">*</span></label>
+                    <span class="error-message" id="emailError"><i class="fas fa-exclamation-circle"></i> </span>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-bouttons">
+                    <input type="button" value="Cancel/Annuler" id="annuler">
+                    <input type="submit" value="Soumettre" id="soumettre">
+                </div>
+            </form>
+        </div>
+        <div id="ficheContainer" class="card" style="display:none;">
+            <h2>Fiche du Membre</h2>
+            <img id="profileImage" src="hello" alt="Profile Image">
+            <p class="categorie">Nom : <span id="ficheNom"></span></p>
+            <p class="categorie">Prénom : <span id="fichePrenom"></span></p>
+            <p class="categorie">ID de projet : <span id="ficheProjectID"></span></p>
+            <p class="categorie">Email : <span id="ficheEmail"></span></p>
+            <div id="confirmationContainer" class="card">
+                <p>Les informations inscrites sont-elles valides ?</p>
+                <div class="buttonsConfirmation">
+                    <button type="button" id="confirmYes">Oui</button>
+                    <button type="button" id="confirmNo">Non</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/FormCreerMembre.js"></script>
+</body>
+
+</html>

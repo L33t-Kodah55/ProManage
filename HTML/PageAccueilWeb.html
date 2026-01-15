@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueil - Gestion de Projet</title>
+    <link rel="stylesheet" href="../CSS/PageAccueilWeb.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div>
+            <h2>Projets</h2>
+            <ul id="project-list">
+                <!-- Les options de projet seront ajoutées ici par JavaScript -->
+            </ul>
+        </div>
+        <button id="create-project-btn" class="button">Créer Projet</button>
+    </div>
+    <div class="content">
+        <div class="top-bar">
+            <div class="icon profile-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Icon" id="profile-icon">
+                <div id="profile-dropdown" class="dropdown-menu">
+                    <a href="PageProfilAdminWeb.html" id="profile-link">Profil</a>
+                    <a href="connexionPage.html" id="logout-link">Déconnexion</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-complet">
+            <div id="welcome-message" class="welcome-message">
+                <img id="promanage-logo" src="../images/Fulllogo.png" alt="ProManage Logo" class="logo-image">
+                <h1>Bienvenue sur ProManage</h1>
+                <p>Utilisez ce site pour gérer vos projets efficacement et professionnellement.</p>
+            </div>
+            <div class="main-content" style="display: none;">
+                <div id="logo-container">
+                    <img id="promanage-logo-main" src="../images/Fulllogo.png" alt="ProManage Logo" class="logo-image">
+                </div>
+                <p>Progression</p>
+                <div class="progress-bar-container">
+                    <input type="number" id="progress-input" min="0" max="100" style="display: none;">
+                    <div class="progress-bar-background">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="progress-text"></span>
+                    <button id="edit-progress-btn" class="modify-btn button">Modifier</button>
+                    <button id="save-progress-btn" class="save-btn button" style="display: none;">Sauvegarder</button>
+                </div>
+                <h1 id="project-id"></h1>
+                <h1 id="project-name"></h1>
+                <input id="name-edit" style="display: none;" />
+                <div class="description">
+                    <p id="project-description"></p>
+                    <textarea id="description-edit" style="display: none;"></textarea>
+                    <div id="description-buttons">
+                        <button id="save-btn" class="save-btn button" style="display: none;">Sauvegarder</button>
+                        <button id="modify-btn" class="modify-btn button">Modifier</button>
+                        <button id="delete-btn" class="delete-btn button">Supprimer</button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tâches</th>
+                                <th>Membres</th>
+                                <th>Date de début</th>
+                                <th>Échéance</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="task-table-body">
+                            <!-- Les tâches seront ajoutées ici par JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../JS/PageAccueilWeb.js"></script>
+</body>
+</html>

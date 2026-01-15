@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Administrateur</title>
+    <link rel="stylesheet" href="../CSS/PageProfilAdminWeb.css">
+</head>
+
+<body class="background-page padding-page">
+    <div class="top-bar">
+        <div class="icon profile-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Icon" id="profile-icon">
+            <div id="profile-dropdown" class="dropdown-menu">
+                <a href="../HTML/PageProfilAdminWeb.html" id="profile-link">Profil</a>
+                <a href="../HTML/connexionPage.html" id="logout-link">Déconnexion</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img id="promanage-logo" src="../images/Fulllogo.png" alt="ProManage Logo"
+            class="logo-image">
+
+        <div class="icon-section">
+            <img id="manager-icon" src="path_to_manager_icon.jpg" alt="icone" class="manager-icon">
+        </div>
+
+        <div class="info-container">
+            <div class="personal-info">
+                <p><strong>Nom:</strong> <span id="manager-nom">Nom du gestionnaire</span></p>
+                <p><strong>Courriel:</strong> <span id="manager-courriel">email@example.com</span></p>
+                <p><strong>Role:</strong> <span id="manager-role">Role du gestionnaire</span></p>
+            </div>
+        </div>
+        <div class="conteneur-bouttons">
+            <button id="back-button" class="back-button">Retour</button>
+            <button id="logout-button" class="logout-button">Déconnexion</button>
+        </div>
+
+    </div>
+
+    <script src="../JS/PageProfilAdminWeb.js"></script>
+</body>
+
+</html>

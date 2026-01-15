@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="connexionPage.css">
+</head>
+<body>
+    <canvas class="background"></canvas>
+    <div class="login-container">
+        <h2>MDP oublié ? </h2>
+        <form id="loginForm" action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Veuillez entrer votre courriel :</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <button type="submit">Connexion</button>
+            </div>
+        </form>
+    </div>
+    <script src="particles.min.js"></script>
+    <script src="connexionPage.js"></script>
+</body>
+</html>

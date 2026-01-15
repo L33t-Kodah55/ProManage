@@ -1,0 +1,187 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-width: 800px;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #3b9feb;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    min-width: 400px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-complet {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.main-content {
+    min-width: 400px;
+    max-width: 800px;
+}
+
+/* Members Page Specific Styles */
+.members-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.member-card {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(50% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    min-width: 360px;
+}
+
+.member-card img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.member-card .member-name {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.member-card .member-role {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.member-card button {
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: #3b9febd5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button, button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #3b9febd5;
+    transition: background-color 0.3s ease, width 0.4s ease, border-radius 0.9s;
+    width: 90px;
+}
+
+.delete-btn:hover {
+    background-color: #a11b1e;
+}
+
+#add-member-btn {
+    padding: 5px 10px;
+    background-color: #3b9febd5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#add-member-btn:hover {
+    background-color: #4dca77;
+}
+
+#back-button {
+    margin-top: 20px;
+}
+
+#back-button:hover {
+    background-color: #4dca77;
+}
+
+.member-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#logo-container {
+    text-align: center;
+    margin-bottom: 20px; /* Ajout d'un espace sous le logo */
+}
+
+.logo-image {
+    max-width: 400px; /* Augmenter la taille du logo */
+    height: auto;
+}
+
+.logo-image:hover {
+   cursor: pointer;
+}
+
+.profile-icon:hover {
+    cursor: pointer;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
