@@ -63,6 +63,13 @@ VIDEOS : https://www.youtube.com/playlist?list=PLWSB8-Q40FmoW1j1F6a5D6cTuBaJu0E2
 
 
 
+
+
+
+
+
+
+
 //******************* [🇬🇧 English] *******************//
 
 ProManage is a web-based management application designed to organize work around tasks, members, and reporting through a clean and structured user interface. It focuses on delivering a complete “management tool” flow (login, dashboard, management views, detail pages, reports) with a consistent and responsive experience.
