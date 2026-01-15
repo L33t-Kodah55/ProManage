@@ -1,6 +1,6 @@
 ProManage
 
-//******************* [🇫🇷 Français](#français) *******************//
+//******************* [🇫🇷 Français] *******************//
 
 ProManage est une application web de gestion conçue pour organiser le travail autour des tâches, des membres et du suivi via une interface claire et structurée. Elle vise à reproduire un flux “outil de gestion” complet (connexion, tableau de bord, gestion, consultation, rapports) avec une expérience utilisateur cohérente et responsive.
 L’objectif du projet est de proposer un point central pour suivre l’avancement d’un travail, structurer les informations importantes et faciliter la navigation entre les différentes sections (tâches, membres, rapports, profil).
@@ -63,7 +63,7 @@ VIDEOS : https://www.youtube.com/playlist?list=PLWSB8-Q40FmoW1j1F6a5D6cTuBaJu0E2
 
 
 
-//******************* [🇬🇧 English](#english) *******************//
+//******************* [🇬🇧 English] *******************//
 
 ProManage is a web-based management application designed to organize work around tasks, members, and reporting through a clean and structured user interface. It focuses on delivering a complete “management tool” flow (login, dashboard, management views, detail pages, reports) with a consistent and responsive experience.
 The goal of the project is to provide a central place to track progress, structure key information, and navigate efficiently across core sections (tasks, members, reports, profile).
